@@ -1,0 +1,44 @@
+//Calculate the number of years since midnight, January 1, 1970
+//First create a function checkYears()
+
+<script>
+
+function checkYears(){
+   var minutes  = 1000 * 60;
+   var hours  =  minutes * 60;
+   var days = hours * 24;
+   var years = days * 365;
+
+   var time = new Date();
+   var t = time.getTime();
+   var result = Math.round( t / years )'
+
+   document.getElementById("show").innerHTML = result;
+}
+
+</script>
+
+
+//now create a p tag to see the output
+
+<p id="show"></p>
+
+//now create a button to display the result
+
+<button type="button" onclick="checkYears()">Check This</button>
+
+
+
+-------------------------------------
+
+//output
+
+
+
+50
+
+//
+
+----------------------------
+
+//Thank you for reading the post. Have a great day!
